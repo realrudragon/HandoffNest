@@ -1,0 +1,23 @@
+{
+  "protocol_version": 1,
+  "mode": "native",
+  "runtime_dependencies": [],
+  "preserve_existing": true,
+  "copy_helpers": false,
+  "files": [
+    {"source": "assets/native/START_HERE.md", "target": "AI_KNOWLEDGE/START_HERE.md"},
+    {"source": "assets/native/QUICK_CONTEXT.md", "target": "AI_KNOWLEDGE/QUICK_CONTEXT.md"},
+    {"source": "assets/native/PROJECT.md", "target": "AI_KNOWLEDGE/PROJECT.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/templates/STACK_MAP.md", "target": "AI_KNOWLEDGE/STACK_MAP.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/WORKING_RULES.md", "target": "AI_KNOWLEDGE/WORKING_RULES.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/HANDOFF.md", "target": "AI_KNOWLEDGE/HANDOFF.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/TASKS.md", "target": "AI_KNOWLEDGE/TASKS.md"},
+    {"source": "assets/native/SETUP.md", "target": "AI_KNOWLEDGE/SETUP.md"}
+  ],
+  "instructions_pointer": {
+    "target": "AGENTS.md",
+    "begin": "<!-- worachote-structure-ai:begin -->",
+    "end": "<!-- worachote-structure-ai:end -->",
+    "text": "Read AI_KNOWLEDGE/WORKING_RULES.md, QUICK_CONTEXT.md and HANDOFF.md before work. Use native tools by default; Python automation is optional. Existing project requirements take precedence. Explanation-only Q&A needs no mandatory records/tests; work needs checkpoints, actual functional/error/regression verification and a standalone handoff."
+  }
+}

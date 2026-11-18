@@ -1,0 +1,12 @@
+{
+  "protocol_version": 1,
+  "provider": "Replace with any provider/model label",
+  "model": "unspecified",
+  "host": "unconfigured",
+  "capabilities": {
+    "read_files": false,
+    "write_files": false,
+    "run_commands": false,
+    "network": false
+  }
+}

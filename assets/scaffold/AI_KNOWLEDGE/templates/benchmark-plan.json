@@ -1,0 +1,8 @@
+{
+  "protocol_version": 1,
+  "benchmark_id": "replace-with-probe-name",
+  "trials": 3,
+  "seed": 1,
+  "adapters": [{"id": "replace-adapter", "kind": "fixture", "argv": ["REPLACE_WITH_PYTHON", "REPLACE_WITH_ADAPTER.py", "{request}", "{response}"], "cwd": ".", "timeout_seconds": 60}],
+  "cases": [{"id": "owning-file", "prompt_file": "REPLACE_WITH_PROMPT.md", "expected_answers": {"owning_file": "REPLACE_WITH_REVIEWED_GROUND_TRUTH"}, "variants": [{"id": "baseline", "context_files": []}, {"id": "with-context", "context_files": ["REPLACE_WITH_TASK_CONTEXT_PACK.md"]}]}]
+}

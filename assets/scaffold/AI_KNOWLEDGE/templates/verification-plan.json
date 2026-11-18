@@ -1,0 +1,8 @@
+{
+  "protocol_version": 1,
+  "checks": [
+    {"id": "functional", "kind": "functional", "argv": ["REPLACE_WITH_RUNTIME", "REPLACE_WITH_FUNCTIONAL_TEST"], "cwd": ".", "timeout_seconds": 60, "expect_stdout": ["REPLACE_WITH_OBSERVED_ASSERTION"]},
+    {"id": "negative", "kind": "error", "argv": ["REPLACE_WITH_RUNTIME", "REPLACE_WITH_NEGATIVE_TEST"], "cwd": ".", "timeout_seconds": 60},
+    {"id": "regression", "kind": "regression", "argv": ["REPLACE_WITH_RUNTIME", "REPLACE_WITH_REGRESSION_TEST"], "cwd": ".", "timeout_seconds": 60}
+  ]
+}

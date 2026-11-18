@@ -1,0 +1,26 @@
+{
+  "protocol_version": 1,
+  "mode": "native",
+  "base_plan": "assets/native/setup-plan.json",
+  "runtime_dependencies": [],
+  "preserve_existing": true,
+  "require_evidence_or_unknowns": true,
+  "files": [
+    {"source": "assets/scaffold/AI_KNOWLEDGE/ARCHITECTURE.md", "target": "AI_KNOWLEDGE/ARCHITECTURE.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/MODULES.md", "target": "AI_KNOWLEDGE/MODULES.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/SOURCE_MAP.md", "target": "AI_KNOWLEDGE/SOURCE_MAP.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/CONFIG.md", "target": "AI_KNOWLEDGE/CONFIG.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/FLOWS.md", "target": "AI_KNOWLEDGE/FLOWS.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/DATA_MODEL.md", "target": "AI_KNOWLEDGE/DATA_MODEL.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/OPEN_QUESTIONS.md", "target": "AI_KNOWLEDGE/OPEN_QUESTIONS.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/FINDINGS.md", "target": "AI_KNOWLEDGE/FINDINGS.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/SESSION_LOG.md", "target": "AI_KNOWLEDGE/SESSION_LOG.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/DECISIONS.md", "target": "AI_KNOWLEDGE/DECISIONS.md"},
+    {"source": "assets/native/MAINTENANCE.md", "target": "AI_KNOWLEDGE/MAINTENANCE.md"},
+    {"source": "assets/native/GRAPHIFY_STATUS.md", "target": "AI_KNOWLEDGE/GRAPHIFY.md"},
+    {"source": "assets/native/COLLABORATION.md", "target": "AI_KNOWLEDGE/COLLABORATION.md"},
+    {"source": "assets/scaffold/AI_KNOWLEDGE/agent-system/HANDOFF_PROTOCOL.md", "target": "AI_KNOWLEDGE/HANDOFF_PROTOCOL.md"},
+    {"source": "assets/native/VERIFICATION.md", "target": "AI_KNOWLEDGE/VERIFICATION.md"},
+    {"source": "assets/native/NEXT_AGENT_PROMPT.md", "target": "AI_KNOWLEDGE/NEXT_AGENT_PROMPT.md"}
+  ]
+}

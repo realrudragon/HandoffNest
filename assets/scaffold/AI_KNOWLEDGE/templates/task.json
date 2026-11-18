@@ -1,0 +1,19 @@
+{
+  "protocol_version": 1,
+  "task_id": "replace-task-id",
+  "kind": "code",
+  "status": "planned",
+  "owner": "unassigned",
+  "goal": "One observable outcome",
+  "allowed_paths": [
+    "replace-with-scope"
+  ],
+  "acceptance_criteria": [
+    "A verifiable assertion"
+  ],
+  "deliverables": [
+    "replace-with-file"
+  ],
+  "verification_file": "AI_KNOWLEDGE/work-items/replace-task-id/verification.json",
+  "started_at": "2026-11-18T00:00:00+07:00"
+}

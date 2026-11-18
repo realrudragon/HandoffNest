@@ -1,0 +1,7 @@
+# Paste into a new agent
+
+Work in this project folder, not the parent monorepo. Read AGENTS.md, AI_KNOWLEDGE/QUICK_CONTEXT.md, HANDOFF.md and agent-system/README.md. Confirm actual tools/runtime and source. For assigned work read work-items/<id>/BRIEF.md, HANDOFF.md and native VERIFICATION.md (or required JSON packet); confirm ownership/scope. Keep task-local checkpoints. Run actual functional, error/negative and regression checks after final edits; retain actual command/output and computed digests/hashes; uncomputed hashes stay not_computed. Do not claim done when required checks fail/cannot run. Handoff must stand alone without chat history. Never log secrets. Explanation-only questions require no mandatory task/log/test. Disclose capability/verification limits.
+
+No file tools: ask for AGENTS + QUICK_CONTEXT + task BRIEF/HANDOFF + owning source. Do not claim execution without tools
+
+Any provider (including DeepSeek, GLM, Kimi) uses the same rules. Confirm host capabilities separately from model identity; see UNIVERSAL_AGENT.md and profiles/. Default native transfers use rules/context/task/evidence directly, no Python required. Optional prepare_agent.py exports require current task/source-bound context. Before unfamiliar-stack work read agent-system/STACK_UNDERSTANDING.md; inspect actual manifests/source/version docs and record unknowns. A signature match does not establish framework understanding.

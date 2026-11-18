@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Task packet protocol v1",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "task_id",
+    "kind",
+    "status",
+    "owner",
+    "goal",
+    "allowed_paths",
+    "acceptance_criteria",
+    "deliverables",
+    "verification_file",
+    "started_at"
+  ],
+  "properties": {
+    "protocol_version": {
+      "const": 1
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,63}$"
+    },
+    "kind": {
+      "enum": [
+        "code",
+        "docs",
+        "audit"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "doing",
+        "blocked",
+        "handed_off",
+        "review",
+        "done"
+      ]
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verification_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_paths": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "deliverables": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "protocol_version": 1,
+  "task_id": "replace-task-id",
+  "verified_at": "2026-11-18T00:00:00+07:00",
+  "verified_hashes": {},
+  "checks": [
+    {
+      "kind": "functional",
+      "status": "not_run",
+      "command": [],
+      "exit_code": null,
+      "evidence_file": "",
+      "evidence_sha256": "",
+      "environment": "",
+      "observed_result": ""
+    },
+    {
+      "kind": "error",
+      "status": "not_run",
+      "command": [],
+      "exit_code": null,
+      "evidence_file": "",
+      "evidence_sha256": "",
+      "environment": "",
+      "observed_result": ""
+    },
+    {
+      "kind": "regression",
+      "status": "not_run",
+      "command": [],
+      "exit_code": null,
+      "evidence_file": "",
+      "evidence_sha256": "",
+      "environment": "",
+      "observed_result": ""
+    }
+  ]
+}

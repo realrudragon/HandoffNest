@@ -1,0 +1,4 @@
+interface:
+  display_name: "HandoffNest"
+  short_description: "Easy project knowledge and handoffs, Python optional"
+  default_prompt: "Use $handoff-nest to organize this project for AI agents with the host's existing tools."

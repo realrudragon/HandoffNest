@@ -1,0 +1,2270 @@
+{
+  "protocol_version": 1,
+  "catalog_version": "0.3.0",
+  "scope": "Recognition signatures only; declarations and static candidates do not establish actual use or semantic understanding",
+  "language_extensions": {
+    "PHP": [
+      ".php",
+      ".phtml"
+    ],
+    "JavaScript": [
+      ".js",
+      ".jsx",
+      ".mjs",
+      ".cjs"
+    ],
+    "TypeScript": [
+      ".ts",
+      ".tsx",
+      ".mts",
+      ".cts"
+    ],
+    "Vue": [
+      ".vue"
+    ],
+    "Svelte": [
+      ".svelte"
+    ],
+    "Astro": [
+      ".astro"
+    ],
+    "HTML": [
+      ".html",
+      ".htm"
+    ],
+    "CSS": [
+      ".css"
+    ],
+    "SCSS": [
+      ".scss"
+    ],
+    "Sass": [
+      ".sass"
+    ],
+    "Less": [
+      ".less"
+    ],
+    "Python": [
+      ".py",
+      ".pyi"
+    ],
+    "Go": [
+      ".go"
+    ],
+    "C": [
+      ".c",
+      ".h"
+    ],
+    "C++": [
+      ".cpp",
+      ".cc",
+      ".cxx",
+      ".hpp",
+      ".hh",
+      ".hxx"
+    ],
+    "Rust": [
+      ".rs"
+    ],
+    "Ruby": [
+      ".rb",
+      ".erb"
+    ],
+    "Java": [
+      ".java"
+    ],
+    "Kotlin": [
+      ".kt",
+      ".kts"
+    ],
+    "Scala": [
+      ".scala"
+    ],
+    "C#": [
+      ".cs",
+      ".cshtml",
+      ".razor"
+    ],
+    "F#": [
+      ".fs",
+      ".fsx"
+    ],
+    "Visual Basic": [
+      ".vb"
+    ],
+    "Dart": [
+      ".dart"
+    ],
+    "Swift": [
+      ".swift"
+    ],
+    "Objective-C": [
+      ".m",
+      ".mm"
+    ],
+    "Elixir": [
+      ".ex",
+      ".exs"
+    ],
+    "Erlang": [
+      ".erl",
+      ".hrl"
+    ],
+    "Clojure": [
+      ".clj",
+      ".cljs",
+      ".cljc",
+      ".edn"
+    ],
+    "Lua": [
+      ".lua"
+    ],
+    "Perl": [
+      ".pl",
+      ".pm"
+    ],
+    "R": [
+      ".r",
+      ".rmd"
+    ],
+    "Julia": [
+      ".jl"
+    ],
+    "Shell": [
+      ".sh",
+      ".bash",
+      ".zsh"
+    ],
+    "PowerShell": [
+      ".ps1",
+      ".psm1"
+    ],
+    "SQL": [
+      ".sql"
+    ],
+    "JSON": [
+      ".json",
+      ".jsonc"
+    ],
+    "YAML": [
+      ".yaml",
+      ".yml"
+    ],
+    "TOML": [
+      ".toml"
+    ],
+    "XML": [
+      ".xml",
+      ".csproj",
+      ".fsproj",
+      ".vbproj"
+    ],
+    "GraphQL": [
+      ".graphql",
+      ".gql"
+    ],
+    "Protobuf": [
+      ".proto"
+    ],
+    "HCL": [
+      ".tf",
+      ".hcl"
+    ],
+    "Markdown": [
+      ".md",
+      ".mdx",
+      ".rst"
+    ],
+    "Templates": [
+      ".twig",
+      ".blade",
+      ".ejs",
+      ".hbs",
+      ".mustache",
+      ".njk",
+      ".liquid"
+    ],
+    "CMake": [
+      ".cmake"
+    ],
+    "Zig": [
+      ".zig"
+    ],
+    "Nim": [
+      ".nim"
+    ],
+    "OCaml": [
+      ".ml",
+      ".mli"
+    ],
+    "Haskell": [
+      ".hs"
+    ],
+    "Solidity": [
+      ".sol"
+    ],
+    "Move": [
+      ".move"
+    ],
+    "Groovy": [
+      ".groovy",
+      ".gradle"
+    ]
+  },
+  "rules": [
+    {
+      "id": "react",
+      "label": "React",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "react"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "vue",
+      "label": "Vue",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "vue"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "nextjs",
+      "label": "Next.js",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "next"
+        ]
+      },
+      "markers": [
+        "next.config.*"
+      ]
+    },
+    {
+      "id": "nuxt",
+      "label": "Nuxt",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "nuxt"
+        ]
+      },
+      "markers": [
+        "nuxt.config.*"
+      ]
+    },
+    {
+      "id": "angular",
+      "label": "Angular",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "@angular/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "svelte",
+      "label": "Svelte",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "svelte"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "sveltekit",
+      "label": "SvelteKit",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "@sveltejs/kit"
+        ]
+      },
+      "markers": [
+        "svelte.config.*"
+      ]
+    },
+    {
+      "id": "astro",
+      "label": "Astro",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "astro"
+        ]
+      },
+      "markers": [
+        "astro.config.*"
+      ]
+    },
+    {
+      "id": "remix",
+      "label": "Remix",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "@remix-run/react",
+          "@remix-run/node"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "solid",
+      "label": "Solid",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "solid-js"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "solidstart",
+      "label": "SolidStart",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "@solidjs/start"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "qwik",
+      "label": "Qwik",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "@builder.io/qwik"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "preact",
+      "label": "Preact",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "preact"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "lit",
+      "label": "Lit",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "lit"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "ember",
+      "label": "Ember",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "ember-source"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "alpine",
+      "label": "Alpine.js",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "alpinejs"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "htmx",
+      "label": "HTMX",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "htmx.org"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "backbone",
+      "label": "Backbone",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "backbone"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "jquery",
+      "label": "jQuery",
+      "category": "frontend",
+      "packages": {
+        "npm": [
+          "jquery"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "express",
+      "label": "Express",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "express"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "nestjs",
+      "label": "NestJS",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "@nestjs/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "fastify",
+      "label": "Fastify",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "fastify"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "koa",
+      "label": "Koa",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "koa"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "hono",
+      "label": "Hono",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "hono"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "adonis",
+      "label": "AdonisJS",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "@adonisjs/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "strapi",
+      "label": "Strapi",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "@strapi/strapi"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "sails",
+      "label": "Sails",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "sails"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "feathers",
+      "label": "Feathers",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "@feathersjs/feathers"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "keystone",
+      "label": "Keystone",
+      "category": "backend",
+      "packages": {
+        "npm": [
+          "@keystone-6/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "laravel",
+      "label": "Laravel",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "laravel/framework"
+        ]
+      },
+      "markers": [
+        "artisan"
+      ]
+    },
+    {
+      "id": "symfony",
+      "label": "Symfony",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "symfony/framework-bundle"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "codeigniter4",
+      "label": "CodeIgniter 4",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "codeigniter4/framework"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "codeigniter3",
+      "label": "CodeIgniter legacy",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "codeigniter/framework"
+        ]
+      },
+      "markers": [
+        "application/config/routes.php",
+        "public_html/application/config/routes.php"
+      ]
+    },
+    {
+      "id": "cakephp",
+      "label": "CakePHP",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "cakephp/cakephp"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "yii",
+      "label": "Yii",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "yiisoft/yii2"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "laminas",
+      "label": "Laminas MVC",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "laminas/laminas-mvc"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "nette",
+      "label": "Nette",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "nette/application"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "slim",
+      "label": "Slim",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "slim/slim"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "spiral",
+      "label": "Spiral",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "spiral/framework"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "phalcon",
+      "label": "Phalcon",
+      "category": "backend",
+      "packages": {
+        "composer": [
+          "phalcon/phalcon"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "django",
+      "label": "Django",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "django"
+        ]
+      },
+      "markers": [
+        "manage.py"
+      ]
+    },
+    {
+      "id": "flask",
+      "label": "Flask",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "flask"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "fastapi"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "starlette",
+      "label": "Starlette",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "starlette"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "tornado",
+      "label": "Tornado",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "tornado"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "pyramid",
+      "label": "Pyramid",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "pyramid"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "bottle",
+      "label": "Bottle",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "bottle"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "sanic",
+      "label": "Sanic",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "sanic"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "litestar",
+      "label": "Litestar",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "litestar"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "streamlit",
+      "label": "Streamlit",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "streamlit"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "dash",
+      "label": "Dash",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "dash"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "gradio",
+      "label": "Gradio",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "gradio"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "celery",
+      "label": "Celery",
+      "category": "backend",
+      "packages": {
+        "pypi": [
+          "celery"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "gin",
+      "label": "Gin",
+      "category": "backend",
+      "packages": {
+        "go": [
+          "github.com/gin-gonic/gin"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "echo",
+      "label": "Echo",
+      "category": "backend",
+      "packages": {
+        "go": [
+          "github.com/labstack/echo/v4"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "fiber",
+      "label": "Fiber",
+      "category": "backend",
+      "packages": {
+        "go": [
+          "github.com/gofiber/fiber/v2",
+          "github.com/gofiber/fiber/v3"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "chi",
+      "label": "Chi",
+      "category": "backend",
+      "packages": {
+        "go": [
+          "github.com/go-chi/chi/v5"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "beego",
+      "label": "Beego",
+      "category": "backend",
+      "packages": {
+        "go": [
+          "github.com/beego/beego/v2"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "buffalo",
+      "label": "Buffalo",
+      "category": "backend",
+      "packages": {
+        "go": [
+          "github.com/gobuffalo/buffalo"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "axum",
+      "label": "Axum",
+      "category": "backend",
+      "packages": {
+        "cargo": [
+          "axum"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "actix",
+      "label": "Actix Web",
+      "category": "backend",
+      "packages": {
+        "cargo": [
+          "actix-web"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "rocket",
+      "label": "Rocket",
+      "category": "backend",
+      "packages": {
+        "cargo": [
+          "rocket"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "warp",
+      "label": "Warp",
+      "category": "backend",
+      "packages": {
+        "cargo": [
+          "warp"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "rails",
+      "label": "Rails",
+      "category": "backend",
+      "packages": {
+        "gem": [
+          "rails"
+        ]
+      },
+      "markers": [
+        "config/routes.rb"
+      ]
+    },
+    {
+      "id": "sinatra",
+      "label": "Sinatra",
+      "category": "backend",
+      "packages": {
+        "gem": [
+          "sinatra"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "hanami",
+      "label": "Hanami",
+      "category": "backend",
+      "packages": {
+        "gem": [
+          "hanami"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "springboot",
+      "label": "Spring Boot",
+      "category": "backend",
+      "packages": {
+        "maven": [
+          "org.springframework.boot:spring-boot-starter-web",
+          "org.springframework.boot:spring-boot-starter"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "springweb",
+      "label": "Spring Web",
+      "category": "backend",
+      "packages": {
+        "maven": [
+          "org.springframework:spring-web",
+          "org.springframework:spring-webmvc"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "quarkus",
+      "label": "Quarkus",
+      "category": "backend",
+      "packages": {
+        "maven": [
+          "io.quarkus:quarkus-rest",
+          "io.quarkus:quarkus-resteasy"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "micronaut",
+      "label": "Micronaut",
+      "category": "backend",
+      "packages": {
+        "maven": [
+          "io.micronaut:micronaut-http-server-netty"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "vertx",
+      "label": "Vert.x",
+      "category": "backend",
+      "packages": {
+        "maven": [
+          "io.vertx:vertx-web"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "aspnetcore",
+      "label": "ASP.NET Core",
+      "category": "backend",
+      "packages": {
+        "nuget": [
+          "Microsoft.AspNetCore.App",
+          "Microsoft.NET.Sdk.Web"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "blazor",
+      "label": "Blazor WebAssembly",
+      "category": "backend",
+      "packages": {
+        "nuget": [
+          "Microsoft.AspNetCore.Components.WebAssembly"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "flutter",
+      "label": "Flutter",
+      "category": "mobile",
+      "packages": {
+        "pub": [
+          "flutter"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "riverpod",
+      "label": "Riverpod",
+      "category": "mobile",
+      "packages": {
+        "pub": [
+          "riverpod",
+          "flutter_riverpod"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "bloc",
+      "label": "Bloc",
+      "category": "mobile",
+      "packages": {
+        "pub": [
+          "bloc",
+          "flutter_bloc"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "getx",
+      "label": "GetX",
+      "category": "mobile",
+      "packages": {
+        "pub": [
+          "get"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "serverpod",
+      "label": "Serverpod",
+      "category": "mobile",
+      "packages": {
+        "pub": [
+          "serverpod"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "shelf",
+      "label": "Shelf",
+      "category": "mobile",
+      "packages": {
+        "pub": [
+          "shelf"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "reactnative",
+      "label": "React Native",
+      "category": "mobile",
+      "packages": {
+        "npm": [
+          "react-native"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "expo",
+      "label": "Expo",
+      "category": "mobile",
+      "packages": {
+        "npm": [
+          "expo"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "ionic",
+      "label": "Ionic",
+      "category": "mobile",
+      "packages": {
+        "npm": [
+          "@ionic/core",
+          "@ionic/react",
+          "@ionic/vue"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "nativewind",
+      "label": "NativeWind",
+      "category": "mobile",
+      "packages": {
+        "npm": [
+          "nativewind"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "tamagui",
+      "label": "Tamagui",
+      "category": "mobile",
+      "packages": {
+        "npm": [
+          "tamagui"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "electron",
+      "label": "Electron",
+      "category": "desktop",
+      "packages": {
+        "npm": [
+          "electron"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "tauri",
+      "label": "Tauri",
+      "category": "desktop",
+      "packages": {
+        "npm": [
+          "@tauri-apps/api"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "avalonia",
+      "label": "Avalonia",
+      "category": "desktop",
+      "packages": {
+        "nuget": [
+          "Avalonia"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "maui",
+      "label": ".NET MAUI",
+      "category": "desktop",
+      "packages": {
+        "nuget": [
+          "Microsoft.Maui.Controls"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "tailwindcss",
+      "label": "Tailwind CSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "tailwindcss"
+        ]
+      },
+      "markers": [
+        "tailwind.config.*"
+      ]
+    },
+    {
+      "id": "bootstrap",
+      "label": "Bootstrap",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "bootstrap"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "bulma",
+      "label": "Bulma",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "bulma"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "foundation",
+      "label": "Foundation",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "foundation-sites"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "uikit",
+      "label": "UIkit",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "uikit"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "semanticui",
+      "label": "Semantic UI",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "semantic-ui",
+          "semantic-ui-css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "fomantic",
+      "label": "Fomantic UI",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "fomantic-ui",
+          "fomantic-ui-css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "materialize",
+      "label": "Materialize",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "materialize-css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "purecss",
+      "label": "Pure CSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "purecss"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "spectre",
+      "label": "Spectre.css",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "spectre.css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "milligram",
+      "label": "Milligram",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "milligram"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "skeleton",
+      "label": "Skeleton CSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "skeleton-css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "pico",
+      "label": "Pico CSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "@picocss/pico"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "watercss",
+      "label": "Water.css",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "water.css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "mvp",
+      "label": "MVP.css",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "mvp.css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "chota",
+      "label": "Chota",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "chota"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "basscss",
+      "label": "Basscss",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "basscss"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "tachyons",
+      "label": "Tachyons",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "tachyons"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "windicss",
+      "label": "Windi CSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "windicss"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "unocss",
+      "label": "UnoCSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "unocss",
+          "@unocss/vite"
+        ]
+      },
+      "markers": [
+        "uno.config.*"
+      ]
+    },
+    {
+      "id": "daisyui",
+      "label": "daisyUI",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "daisyui"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "flowbite",
+      "label": "Flowbite",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "flowbite",
+          "flowbite-react"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "sass",
+      "label": "Sass",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "sass",
+          "node-sass"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "less",
+      "label": "Less",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "less"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "postcss",
+      "label": "PostCSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "postcss"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "emotion",
+      "label": "Emotion",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "@emotion/react",
+          "@emotion/css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "styledcomponents",
+      "label": "styled-components",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "styled-components"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "stitches",
+      "label": "Stitches",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "@stitches/react"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "vanillaextract",
+      "label": "vanilla-extract",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "@vanilla-extract/css"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "linaria",
+      "label": "Linaria",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "@linaria/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "jss",
+      "label": "JSS",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "jss"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "stylex",
+      "label": "StyleX",
+      "category": "css",
+      "packages": {
+        "npm": [
+          "@stylexjs/stylex"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "mui",
+      "label": "Material UI",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@mui/material"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "antd",
+      "label": "Ant Design",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "antd"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "chakra",
+      "label": "Chakra UI",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@chakra-ui/react"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "mantine",
+      "label": "Mantine",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@mantine/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "radix",
+      "label": "Radix UI",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@radix-ui/react-dialog",
+          "radix-ui"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "headlessui",
+      "label": "Headless UI",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@headlessui/react",
+          "@headlessui/vue"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "vuetify",
+      "label": "Vuetify",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "vuetify"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "quasar",
+      "label": "Quasar",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "quasar"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "primevue",
+      "label": "PrimeVue",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "primevue"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "primereact",
+      "label": "PrimeReact",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "primereact"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "primeng",
+      "label": "PrimeNG",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "primeng"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "elementplus",
+      "label": "Element Plus",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "element-plus"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "naiveui",
+      "label": "Naive UI",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "naive-ui"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "bootstrapvue",
+      "label": "BootstrapVue",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "bootstrap-vue",
+          "bootstrap-vue-next"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "reactbootstrap",
+      "label": "React Bootstrap",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "react-bootstrap"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "heroui",
+      "label": "HeroUI",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@heroui/react",
+          "@nextui-org/react"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "framework7",
+      "label": "Framework7",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "framework7"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "shoelace",
+      "label": "Shoelace",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@shoelace-style/shoelace"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "carbon",
+      "label": "Carbon",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@carbon/react"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "fluentui",
+      "label": "Fluent UI",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@fluentui/react-components"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "materialweb",
+      "label": "Material Web",
+      "category": "ui",
+      "packages": {
+        "npm": [
+          "@material/web"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "vite",
+      "label": "Vite",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "vite"
+        ]
+      },
+      "markers": [
+        "vite.config.*"
+      ]
+    },
+    {
+      "id": "webpack",
+      "label": "Webpack",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "webpack"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "rollup",
+      "label": "Rollup",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "rollup"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "parcel",
+      "label": "Parcel",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "parcel"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "babel",
+      "label": "Babel",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "@babel/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "esbuild",
+      "label": "esbuild",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "esbuild"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "swc",
+      "label": "SWC",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "@swc/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "turborepo",
+      "label": "Turborepo",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "turbo"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "nx",
+      "label": "Nx",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "nx"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "rspack",
+      "label": "Rspack",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "@rspack/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "rsbuild",
+      "label": "Rsbuild",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "@rsbuild/core"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "gulp",
+      "label": "Gulp",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "gulp"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "grunt",
+      "label": "Grunt",
+      "category": "build",
+      "packages": {
+        "npm": [
+          "grunt"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "jest",
+      "label": "Jest",
+      "category": "test",
+      "packages": {
+        "npm": [
+          "jest"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "vitest",
+      "label": "Vitest",
+      "category": "test",
+      "packages": {
+        "npm": [
+          "vitest"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "playwright",
+      "label": "Playwright",
+      "category": "test",
+      "packages": {
+        "npm": [
+          "@playwright/test",
+          "playwright"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "cypress",
+      "label": "Cypress",
+      "category": "test",
+      "packages": {
+        "npm": [
+          "cypress"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "mocha",
+      "label": "Mocha",
+      "category": "test",
+      "packages": {
+        "npm": [
+          "mocha"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "testinglibrary",
+      "label": "Testing Library",
+      "category": "test",
+      "packages": {
+        "npm": [
+          "@testing-library/react",
+          "@testing-library/vue"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "pytest",
+      "label": "pytest",
+      "category": "test",
+      "packages": {
+        "pypi": [
+          "pytest"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "robot",
+      "label": "Robot Framework",
+      "category": "test",
+      "packages": {
+        "pypi": [
+          "robotframework"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "phpunit",
+      "label": "PHPUnit",
+      "category": "test",
+      "packages": {
+        "composer": [
+          "phpunit/phpunit"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "pest",
+      "label": "Pest",
+      "category": "test",
+      "packages": {
+        "composer": [
+          "pestphp/pest"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "rspec",
+      "label": "RSpec",
+      "category": "test",
+      "packages": {
+        "gem": [
+          "rspec",
+          "rspec-rails"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "junit",
+      "label": "JUnit",
+      "category": "test",
+      "packages": {
+        "maven": [
+          "org.junit.jupiter:junit-jupiter",
+          "junit:junit"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "prisma",
+      "label": "Prisma",
+      "category": "data",
+      "packages": {
+        "npm": [
+          "prisma",
+          "@prisma/client"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "drizzle",
+      "label": "Drizzle",
+      "category": "data",
+      "packages": {
+        "npm": [
+          "drizzle-orm"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "sequelize",
+      "label": "Sequelize",
+      "category": "data",
+      "packages": {
+        "npm": [
+          "sequelize"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "typeorm",
+      "label": "TypeORM",
+      "category": "data",
+      "packages": {
+        "npm": [
+          "typeorm"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "mongoose",
+      "label": "Mongoose",
+      "category": "data",
+      "packages": {
+        "npm": [
+          "mongoose"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "knex",
+      "label": "Knex",
+      "category": "data",
+      "packages": {
+        "npm": [
+          "knex"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "sqlalchemy",
+      "label": "SQLAlchemy",
+      "category": "data",
+      "packages": {
+        "pypi": [
+          "sqlalchemy"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "sqlmodel",
+      "label": "SQLModel",
+      "category": "data",
+      "packages": {
+        "pypi": [
+          "sqlmodel"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "entityframework",
+      "label": "Entity Framework Core",
+      "category": "data",
+      "packages": {
+        "nuget": [
+          "Microsoft.EntityFrameworkCore"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "dapper",
+      "label": "Dapper",
+      "category": "data",
+      "packages": {
+        "nuget": [
+          "Dapper"
+        ]
+      },
+      "markers": []
+    },
+    {
+      "id": "hmvc",
+      "label": "HMVC module layout",
+      "category": "backend",
+      "packages": {},
+      "markers": [
+        "application/modules/*/controllers/*.php",
+        "public_html/application/modules/*/controllers/*.php"
+      ]
+    },
+    {
+      "id": "wordpress",
+      "label": "WordPress",
+      "category": "backend",
+      "packages": {},
+      "markers": [
+        "wp-load.php",
+        "public_html/wp-load.php"
+      ]
+    },
+    {
+      "id": "shadcn",
+      "label": "shadcn-style components",
+      "category": "ui",
+      "packages": {},
+      "markers": [
+        "components.json"
+      ]
+    },
+    {
+      "id": "docker",
+      "label": "Docker/Compose",
+      "category": "infra",
+      "packages": {},
+      "markers": [
+        "Dockerfile",
+        "Dockerfile.*",
+        "compose.yaml",
+        "compose.yml",
+        "docker-compose.yml",
+        "docker-compose.yaml"
+      ]
+    },
+    {
+      "id": "terraform",
+      "label": "Terraform",
+      "category": "infra",
+      "packages": {},
+      "markers": [
+        "*.tf"
+      ]
+    },
+    {
+      "id": "helm",
+      "label": "Helm",
+      "category": "infra",
+      "packages": {},
+      "markers": [
+        "Chart.yaml"
+      ]
+    },
+    {
+      "id": "ansible",
+      "label": "Ansible",
+      "category": "infra",
+      "packages": {},
+      "markers": [
+        "ansible.cfg"
+      ]
+    }
+  ]
+}

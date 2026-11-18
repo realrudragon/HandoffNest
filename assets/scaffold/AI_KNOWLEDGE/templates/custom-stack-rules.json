@@ -1,0 +1,6 @@
+{
+  "protocol_version": 1,
+  "rules": [
+    {"id": "replace-custom-framework", "label": "Replace with source-confirmed framework", "category": "frontend", "packages": {"npm": ["replace-with-actual-package-name"]}, "markers": ["replace-framework.config.*"]}
+  ]
+}
